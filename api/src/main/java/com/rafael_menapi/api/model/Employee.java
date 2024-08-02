@@ -1,23 +1,22 @@
 package com.rafael_menapi.api.model;
 
+
 import java.util.Objects;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
 import lombok.ToString;
 
 
 @ToString
 @Entity
 @Table(name="tb_employees")
-public class Employee {
+public class Employee {     //modelo corresponde a uma entidade no banco de dados
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,7 +27,6 @@ public class Employee {
 	@Column(name="name")
 	private String name;
 	
-	@JsonIgnore
 	@Column(name="age")
 	private Long age;
 	
@@ -36,11 +34,13 @@ public class Employee {
 	private String Location;
 	
 	@Column(name="email")
+	@Email(message="Please enter a valid email")
 	private String email;
 	
 	@Column(name="department")
 	private String department;
 	
+
 	
 	public String getName() {
 		return name;
@@ -88,6 +88,10 @@ public class Employee {
 		return Objects.equals(Location, other.Location) && Objects.equals(age, other.age)
 				&& Objects.equals(department, other.department) && Objects.equals(email, other.email)
 				&& Objects.equals(name, other.name);
+	}
+	public void setId(Long id) {
+		this.id = id;
+		
 	}
 	
 	
