@@ -31,7 +31,7 @@ public class Employee {     //modelo corresponde a uma entidade no banco de dado
 	private Long age;
 	
 	@Column(name="location")
-	private String Location;
+	private String location;
 	
 	@Column(name="email")
 	@Email(message="Please enter a valid email")
@@ -55,10 +55,10 @@ public class Employee {     //modelo corresponde a uma entidade no banco de dado
 		this.age = age;
 	}
 	public String getLocation() {
-		return Location;
+		return location;
 	}
 	public void setLocation(String location) {
-		Location = location;
+		this.location = location;
 	}
 	public String getEmail() {
 		return email;
@@ -74,7 +74,7 @@ public class Employee {     //modelo corresponde a uma entidade no banco de dado
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(Location, age, department, email, name);
+		return Objects.hash(location, age, department, email, name);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -85,7 +85,7 @@ public class Employee {     //modelo corresponde a uma entidade no banco de dado
 		if (getClass() != obj.getClass())
 			return false;
 		Employee other = (Employee) obj;
-		return Objects.equals(Location, other.Location) && Objects.equals(age, other.age)
+		return Objects.equals(location, other.location) && Objects.equals(age, other.age)
 				&& Objects.equals(department, other.department) && Objects.equals(email, other.email)
 				&& Objects.equals(name, other.name);
 	}
