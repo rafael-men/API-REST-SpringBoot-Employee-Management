@@ -2,6 +2,7 @@ package com.rafael_menapi.api.controller;
 
 import java.util.List;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -19,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.rafael_menapi.api.model.Employee;
 import com.rafael_menapi.api.service.EmployeeService;
 
-import jakarta.validation.Valid;
+
 
 @RestController
 @RequestMapping("/apilearning/v1")
