@@ -7,3 +7,18 @@
 <p>- Maven</p>
 <p>- Spring Data JPA</p>
 <p>- MySql</p>
+<p>- Docker</p>
+<hr>
+## Como Executar com Docker:
+
+<ul>
+  <li>Navegue até o diretório do Projeto</li>
+  <li>Execute o comando docker compose up --build -d para criar os contêineres</li>
+</ul>
+
+## Como Executar no localhost:
+<ul>
+  <li>Navegue até o diretório do projeto</li>
+  <li>>Localize e execute o arquivo de inicialização do spring boot</li>
+  <li>Uma instância será aberta na porta 8080</li>
+</ul>
