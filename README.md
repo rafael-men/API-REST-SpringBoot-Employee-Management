@@ -20,5 +20,5 @@
 <ul>
   <li>Navegue até o diretório do projeto</li>
   <li>Localize e execute o arquivo de inicialização do spring boot</li>
-  <li>Uma instância será aberta na porta 8080</li>
+  <li>Uma instância será aberta na porta 8080: localhost:8080/swagger-ui.html</li>
 </ul>
