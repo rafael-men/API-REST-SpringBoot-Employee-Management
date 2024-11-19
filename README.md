@@ -6,7 +6,7 @@
 <p>- SpringBoot 3.2.5</p>
 <p>- Maven</p>
 <p>- Spring Data JPA</p>
-<p>- MySql</p>
+<p>- PostgreSQL</p>
 <p>- Docker</p>
 <hr>
 
