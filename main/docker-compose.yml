@@ -8,21 +8,22 @@ services:
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/learning
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root123
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/learning
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: senha
     depends_on:
-      - mysql
+      - postgres
 
-  mysql:
-    image: mysql:8.0
+  postgres:
+    image: postgres:15.4
     ports:
-      - "3300:3306"
+      - "5432:5432"
     environment:
-      MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: learning
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: senha
+      POSTGRES_DB: learning
     volumes:
-      - mysql_data:/var/lib/mysql
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  mysql_data:
+  postgres_data:
