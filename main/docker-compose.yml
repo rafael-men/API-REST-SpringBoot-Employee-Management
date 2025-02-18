@@ -6,11 +6,11 @@ services:
       context: ./api
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8000:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/learning
+      SPRING_DATASOURCE_URL: jdbc:postgresql://yamanote.proxy.rlwy.net:24827/railway
       SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: senha
+      SPRING_DATASOURCE_PASSWORD: tNWnwDFxZHNXylqTAkfSkxshudgYJmGa
     depends_on:
       - postgres
 
@@ -20,8 +20,8 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: senha
-      POSTGRES_DB: learning
+      POSTGRES_PASSWORD: tNWnwDFxZHNXylqTAkfSkxshudgYJmGa
+      POSTGRES_DB: railway
     volumes:
       - postgres_data:/var/lib/postgresql/data
 

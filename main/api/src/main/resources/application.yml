@@ -1,13 +1,13 @@
 app:
   name: Employee Management Application
   version: v1
-  description: ""
+  description: "API REST Employee management"
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/learning
+    url: jdbc:postgresql://yamanote.proxy.rlwy.net:24827/railway
     username: postgres
-    password: senha
+    password: tNWnwDFxZHNXylqTAkfSkxshudgYJmGa
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
