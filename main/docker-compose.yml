@@ -8,9 +8,9 @@ services:
     ports:
       - "8000:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://yamanote.proxy.rlwy.net:24827/railway
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: tNWnwDFxZHNXylqTAkfSkxshudgYJmGa
+      SPRING_DATASOURCE_URL: jdbc:postgresql://ep-gentle-water-a2t57isi.eu-central-1.pg.koyeb.app:5432/koyebdb
+      SPRING_DATASOURCE_USERNAME: koyeb-adm
+      SPRING_DATASOURCE_PASSWORD: npg_AWtYzVCnk21w
     depends_on:
       - postgres
 

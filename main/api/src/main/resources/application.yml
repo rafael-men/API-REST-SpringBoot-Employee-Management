@@ -5,9 +5,9 @@ app:
 
 spring:
   datasource:
-    url: jdbc:postgresql://yamanote.proxy.rlwy.net:24827/railway
-    username: postgres
-    password: tNWnwDFxZHNXylqTAkfSkxshudgYJmGa
+    url: jdbc:postgresql://ep-gentle-water-a2t57isi.eu-central-1.pg.koyeb.app:5432/koyebdb
+    username: koyeb-adm
+    password: npg_AWtYzVCnk21w
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
